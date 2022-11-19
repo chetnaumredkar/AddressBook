@@ -90,7 +90,7 @@ public class ContactDetails {
 	public void setPhoneNumber(long phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-//using tostring method
+//using to string method
 	@Override
 	public String toString() {
 		return "ContactDetails [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
