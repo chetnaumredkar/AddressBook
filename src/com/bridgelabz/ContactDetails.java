@@ -10,7 +10,7 @@ public class ContactDetails {
 	private String email;
 	private long zip;
 	private long phoneNumber;
-//creating non parameterized constructor
+//creating  non parameterized constructor
 	ContactDetails() {
 	}
 	//creating parameterized constructor

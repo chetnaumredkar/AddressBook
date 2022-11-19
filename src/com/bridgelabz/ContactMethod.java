@@ -22,6 +22,8 @@ public class ContactMethod {
 			System.out.println("Enter the option u want to perform :");
 			System.out.println("1.Add a contact");
 			System.out.println("2.Edit a contact");
+			System.out.println("3.Delete a contact");
+
 
 			Scanner input = new Scanner(System.in);// scanner class
 			int options = input.nextInt();
@@ -31,6 +33,9 @@ public class ContactMethod {
 				break;
 			case 2:
 				editContact();
+				break;
+			case 3:
+				deleteContact();
 				break;
 
 			default:
@@ -130,4 +135,31 @@ public class ContactMethod {
 				}
 			}
 		}
-	}}
+	}
+	void deleteContact() {
+		System.out.println("Enter the name of Contact Details u want to Delete");
+		Scanner input1 = new Scanner(System.in);// scanner class
+		String deletedName = input1.next();
+		for(ContactDetails i:contactDetailsArray){
+			if(i == null) {
+			} else {
+				if (deletedName.equals(i.getFirstName())) {
+					System.out.println("Cong.. found " + deletedName);
+					System.out.println(i);
+					i.setFirstName(null);
+					i.setLastName(null);
+					i.setZip(0);
+					i.setPhoneNumber(0);
+					i.setAddress(null);
+					i.setState(null);
+					i.setCity(null);
+					i.setEmail(null);
+					System.out.println("After Deletion" );
+					System.out.println(i);
+
+
+				}
+			}
+		}
+}
+}
