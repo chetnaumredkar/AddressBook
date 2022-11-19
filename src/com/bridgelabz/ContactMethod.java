@@ -22,6 +22,7 @@ public class ContactMethod {
 			System.out.println("Enter the option u want to perform :");
 			System.out.println("1.Add a contact");
 			System.out.println("2.Edit a contact");
+
 			Scanner input = new Scanner(System.in);// scanner class
 			int options = input.nextInt();
 			switch (options) {
@@ -31,7 +32,6 @@ public class ContactMethod {
 			case 2:
 				editContact();
 				break;
-			
 
 			default:
 				System.out.println("Wrong Choice");
