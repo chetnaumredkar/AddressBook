@@ -76,7 +76,7 @@ public class ContactDetails {
 	}
 
 	public long getZip() {
-		return zip;
+	return zip;
 	}
 
 	public void setZip(long zip) {
