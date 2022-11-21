@@ -3,7 +3,7 @@ package com.bridgelabz;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ContactMethod {
+public class ContactMethod{
 	private int index;
 	ContactDetails[] contactDetailsArray;
 
